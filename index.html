@@ -7,7 +7,7 @@
     <script src="src/js/index.js"></script>
     <link rel="stylesheet" href="src/css/style.css"/>
 </head>
-<body class="bg-amber-50 overflow-hidden">
+<body class="bg-amber-50">
     <nav>
         <span class="absolute top-5 right-7 cursor-pointer z-20 lg:hidden" onclick="openHeader()">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12">
@@ -54,18 +54,37 @@
         </div>
     </nav>
     <main>
-        <div class="flex w-5/6 justify-end lg:mt-32">
+        <div class="flex w-5/6 justify-end lg:mt-32 h-screen">
             <div>
-                <img src="src/img/me.jpg" alt="me" class="rounded-full h-[300px] shadow mr-20 transform transition-all translate-y-12 ease-in" data-replace='{ "translate-y-12": "translate-y-0" }'>
+                <img src="src/img/me.jpg" alt="me" class="rounded-full h-[300px] shadow mr-20" data-replace='{ "translate-y-12": "translate-y-0" }'>
             </div>
-            <div class="w-3/6 transform transition-all translate-y-12 ease-in" data-replace='{ "translate-y-12": "translate-y-0" }'>
+            <div class="w-3/6">
                 <p class="opacity-80">Software developer</p>
-                <h1 class="font-bold leading-relaxed duration-500 relative">Job van der Ploeg</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Diam in arcu cursus euismod quis viverra nibh. Ornare quam viverra orci sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum.
-                </p>
+                <h1 class="font-bold leading-relaxed">Job van der Ploeg</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Diam in arcu cursus euismod quis viverra nibh. Ornare quam viverra orci sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum.</p>
                 <div class="mt-5">
                     <a href="#"> <button class="button">Download CV</button> </a>
                     <a href="#"> <button class="button">Contact</button> </a>
+                </div>
+            </div>
+        </div>
+        <div class="h-screen">
+            <div class="flex w-5/6 justify-center mb-20">
+                <div class="relative group w-5/6">
+                    <h2 class="font-bold leading-relaxed">Projects</h2>
+                    <span class="absolute w-0 h-1 bg-amber-300 w-20"></span>
+                </div>
+            </div>
+            <div class="flex justify-center w-6/6 gap-32 leading-relaxed">
+                <div class="w-2/6">
+                    <a href=""></a> <h3 class="font-medium">Project 1</h3> </a>
+                    <p>sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. </p>
+                    <a href="#"> <button class="button">Zie project</button> </a>
+                </div>
+                <div class="w-2/6">
+                    <a href=""></a> <h3 class="font-medium">Project 2</h3> </a>
+                    <p>sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. </p>
+                    <a href="#"> <button class="button">Zie project</button> </a>
                 </div>
             </div>
         </div>

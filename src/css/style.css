@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Language: css */
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+button {
+    @apply border-2 border-amber-300 ease-out hover:-translate-y-1 transition-all rounded px-10 py-1;
+}
+
+.animation {
+    @apply transform transition-all translate-y-12 ease-out;
+}

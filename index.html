@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Job van der Ploeg</title>
     <script src="src/js/index.js"></script>
     <link rel="stylesheet" href="src/css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="bg-amber-50">
     <nav>
@@ -14,7 +15,7 @@
                 <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm8.25 5.25a.75.75 0 01.75-.75h8.25a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
             </svg>
         </span>
-        <div class="fixed lg:relative top-0 bottom-0 left-0 right-0 header z-10 lg:h-20 hidden lg:flex justify-between px-8 bg-amber-50">
+        <div class="fixed top-0 bottom-0 left-0 right-0 header z-10 lg:h-20 hidden lg:flex justify-between px-8 bg-amber-50">
             <div class="flex lg:flex-row gap-5 items-center mt-8 lg:mt-0">
                 <a href="https://github.com/jobploeg" class="ease-out hover:-translate-y-1 transition-all" target="_blank">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6">
@@ -54,11 +55,11 @@
         </div>
     </nav>
     <main>
-        <div class="flex lg:w-5/6 justify-end lg:mt-[25vh] mt-[15vh] h-screen mx-5 lg:mx-0" id="me">
-            <div>
+        <div class="flex lg:w-5/6 justify-end lg:mt-[25vh] mt-[15vh] h-screen mx-5 lg:mx-0 scroll-mt-64" id="me">
+            <div data-aos="fade-up">
                 <img src="src/img/me.jpg" alt="me" class="rounded-full h-[300px] w-auto shadow lg:mr-20 hidden lg:block">
             </div>
-            <div class="lg:w-3/6">
+            <div class="lg:w-3/6" data-aos="fade-up">
                 <p class="opacity-80">Software developer</p>
                 <h1 class="font-bold leading-relaxed">Job van der Ploeg</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Diam in arcu cursus euismod quis viverra nibh. Ornare quam viverra orci sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum.</p>
@@ -68,8 +69,8 @@
                 </div>
             </div>
         </div>
-        <div class="h-screen mx-5" id="portfolio">
-            <div class="flex lg:w-5/6 lg:justify-center mb-20">
+        <div class="h-screen mx-5 scroll-mt-24" id="portfolio">
+            <div class="flex lg:w-5/6 lg:justify-center mb-20" data-aos="fade-up">
                 <div class="relative group lg:w-5/6">
                     <h2 class="font-bold leading-relaxed">Projects</h2>
                     <span class="absolute w-0 h-1 bg-amber-300 w-20"></span>
@@ -77,27 +78,57 @@
             </div>
 
             <div class="grid leading-relaxed lg:grid-cols-2 lg:gap-32 gap-24 lg:mx-48">
-                <div class="flex">
+                <div class="flex" data-aos="fade-up">
                     <p class="font-black text-amber-300 flex mr-10 text-5xl">1</p>
                     <div>
-                        <a href="massagepraktijk.html"></a> <h3 class="font-medium">Massagepraktijk</h3> </a>
-                        <p>sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. </p>
-                        <a href="massagepraktijk.html"> <button class="button mt-3">Zie project</button> </a>
+                        <a href="massagepraktijk.html"> <h3 class="font-medium mb-1">Massagepraktijk</h3>
+                            <p class="opacity-90">
+                                Een project voor een <b>klant.</b> De klant wilde een website voor haar massagepraktijk. Dit project hebben we met drie personen gemaakt. We hebben samengewerkt met een designer.
+                                De website moest een <b>reserveringssysteem</b> hebben. Dit project hebben we gemaakt met <b>laravel</b> en <b>tailwind</b>. Verder hebben we gebruik gemaakt van de <b>google calendar API</b>
+                            </p>
+                        </a>
+                        <a href="praktijk.html"> <button class="button mt-3">Zie project</button> </a>
                     </div>
                 </div>
-                <div class="flex">
+                <div class="flex" data-aos="fade-up">
                     <p class="font-black text-amber-300 flex mr-10 text-5xl">2</p>
                     <div>
-                        <a href="gewicht-tracker.html"></a> <h3 class="font-medium">Gewicht tracker</h3> </a>
-                        <p>sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. </p>
-                        <a href="gewicht-tracker.html"> <button class="button mt-3">Zie project</button> </a>
+                        <a href="gewicht-tracker.html"> <h3 class="font-medium mb-1">Gewicht tracker</h3>
+                            <p class="opacity-90">
+                                Een eigen project om mijn kennis van Laravel bij te schaven. Mijn moeder wilde graag een website waar ze haar <b>gewicht</b> kan bijhouden.
+                                Ik heb dit project gemaakt met <b>laravel</b> en <b>tailwind</b>. Ik heb de library <b>Chart.js</b> gebruikt voor de grafieken.
+                                De gebruiker kan zich <b>registreren</b> of <b>inloggen</b>. De klant kan zijn gewicht invoeren en de website houdt het bij.
+                                Via een grafiek kan de gebruiker zijn gewicht zien. Verder wordt het <b>BMI</b> ook bijgehouden.
+                            </p>
+                        </a>
+                        <a href=""> <button class="button mt-3">Demo</button> </a>
+                        <a href="tracker.html"> <button class="button mt-3 mb-1">Zie project</button> </a>
                     </div>
                 </div>
-                <div class="flex">
+                <div class="flex" data-aos="fade-up">
                     <p class="font-black text-amber-300 flex mr-10 text-5xl">3</p>
                     <div>
-                        <a href="portfolio.html"></a> <h3 class="font-medium">Portfolio</h3> </a>
-                        <p>sagittis. Sed euismod nisi porta lorem mollis. Sed felis eget velit aliquet sagittis id. Dui vivamus arcu felis bibendum ut. Id neque aliquam vestibulum morbi blandit. Pellentesque habitant morbi tristique senectus et. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. </p>
+                        <a href="coachpraktijk.html"> <h3 class="font-medium mb-1">Coachpraktijk</h3>
+                            <p class="opacity-90">
+                                Een website voor een klant. De <b>klant</b> heeft een coachpraktijk. Hiervoor wilde ze een website.
+                                Een paar <b>eisen</b> waren dat de website volledig aanpasbaar is door de klant. Om deze reden heb ik gekozen voor <b>wordpress</b>.
+                                Verder heb ik geholpen met het <b>opzetten</b> van de website en help ik met het <b>beheren</b> van de website.
+                            </p>
+                        </a>
+                        <a href="coachpraktijk.html"> <button class="button mt-3">Zie project</button> </a>
+                    </div>
+                </div>
+                <div class="flex" data-aos="fade-up">
+                    <p class="font-black text-amber-300 flex mr-10 text-5xl">4</p>
+                    <div>
+                        <a href="portfolio.html"> <h3 class="font-medium mb-1">Portfolio</h3>
+                            <p class="opacity-90">
+                                Deze website. Dit project heb ik met html, tailwind en js gemaakt. Verder heb ik <b>AOS js</b> gebruikt voor de scroll animaties. Ik gebruik <b>VITE</b> als build tool.
+                                Ik gebruik verder geen framework omdat ik de website zo <b>licht</b> mogelijk wil laten. De twee eisen van mijzelf zijn een website die <b>informatief</b>
+                                is en een website met een <b>google lighthouse score</b> van 100%.
+                            </p>
+                        </a>
+                        <a href="#"> <button class="button mt-3">Demo</button> </a>
                         <a href="portfolio.html"> <button class="button mt-3">Zie project</button> </a>
                     </div>
                 </div>
@@ -105,7 +136,7 @@
         </div>
         <div class="h-screen mt-56 lg:mt-0 mx-5 flex flex-col lg:flex-row lg:justify-evenly justify-center lg:items-center" id="contact">
             <div>
-                <div class="relative group">
+                <div class="relative group" data-aos="fade-up">
                     <h2 class="font-bold leading-relaxed">Contact me</h2>
                     <span class="absolute w-0 h-1 bg-amber-300 w-20"></span>
                     <p class="mt-5">Nog vragen? Je kan me altijd mailen. Of een berichtje sturen via mijn socials!</p>
@@ -117,7 +148,7 @@
                     </a>
                 </div>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4" data-aos="fade-up">
                 <a href="https://github.com/jobploeg" class="ease-out hover:-translate-y-2 transition-all flex items-center gap-5 mt-3 lg:mt-0" target="_blank">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-10 h-10">
                         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
@@ -140,4 +171,12 @@
         </div>
     </main>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            delay: 150,
+        }
+    );
+</script>
 </html>

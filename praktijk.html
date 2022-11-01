@@ -6,10 +6,20 @@
     <title>Job van der Ploeg</title>
     <script src="src/js/index.js"></script>
     <link rel="stylesheet" href="src/css/style.css"/>
+
+    <!--Oas animations CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
 
-    <meta name="description" content="Portfolio website van Job van der Ploeg">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--Meta description-->
+    <meta name="description" content="Portfolio website van web developer Job van der Ploeg">
 </head>
 <body class="bg-amber-50">
 <nav>
@@ -39,11 +49,11 @@
 
         <ul class="flex flex-col lg:flex-row lg:gap-10 gap-4 items-center lg:my-0 my-32 lg:h-20 text-3xl lg:text-xl">
             <li class="relative group">
-                <a href="index.html#me" onclick="openHeader()">Me</a>
+                <a href="index#me" onclick="openHeader()">Me</a>
                 <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
             </li>
             <li class="relative group">
-                <a href="index.html#portfolio" onclick="openHeader()">Portfolio</a>
+                <a href="index#portfolio" onclick="openHeader()">Portfolio</a>
                 <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
             </li>
             <li class="relative group">
@@ -51,7 +61,7 @@
                 <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
             </li>
             <li class="relative group">
-                <a href="index.html#contact" onclick="openHeader()">Contact</a>
+                <a href="index#contact" onclick="openHeader()">Contact</a>
                 <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
             </li>
         </ul>
@@ -83,9 +93,10 @@
             <span class="absolute w-0 h-0.5 bg-amber-300 w-20"></span>
         </div>
         <p class="pt-2" data-aos="fade-up">Er waren een paar vragen waar we goed over moesten denken. Zo hadden we in totaal twee weken voor het project. Dit betekende dat we het project goed moesten plannen.
-        Met dit in gedachten hebben we ook het reserveringssysteem bedacht. Dit moest niet te uitgebreid worden. Daar hadden we echter geen tijd voor. Daarom hebben we gekozen voor een oplossing waar
+        Met dit in gedachten hebben we ook het reserveringssysteem bedacht. Dit moest niet te uitgebreid worden. Daar hadden we geen tijd voor. Daarom hebben we gekozen voor een oplossing waar
         de klant via haar google agenda 'werkblokken' kan invullen. Deze blokken halen we dan op via de google api. Met javascript hebben we toen de logica geschreven voor de reserveringspagina.
-        De klant krijgt tijdsblokken te zien. Deze worden via de google api opgehaald en weergeven. Als een bezoeker een afspraak gepland heeft, wordt dit in de google agenda gezet, met een half uur pauze erna (eis van de klant)
+        De bezoeker krijgt tijdsblokken te zien. Deze worden via de google api opgehaald en weergeven. Als een bezoeker een afspraak gepland heeft, wordt dit in de google agenda gezet, met een half uur pauze erna (eis van de klant).
+        Deze oplossing werkt goed en is overzichtelijk in gebruik voor de klant.
         </p>
 
         <div class="relative group" data-aos="fade-up">

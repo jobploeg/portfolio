@@ -6,10 +6,20 @@
     <title>Job van der Ploeg</title>
     <script src="src/js/index.js"></script>
     <link rel="stylesheet" href="src/css/style.css"/>
+
+    <!--Oas animations CDN-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="src/img/favicon.ico">
 
-    <meta name="description" content="Portfolio website van Job van der Ploeg">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--Meta description-->
+    <meta name="description" content="Portfolio website van web developer Job van der Ploeg">
 </head>
 <body class="bg-amber-50">
     <nav>
@@ -39,11 +49,11 @@
 
             <ul class="flex flex-col lg:flex-row lg:gap-10 gap-4 items-center lg:my-0 my-32 lg:h-20 text-3xl lg:text-xl">
                 <li class="relative group">
-                    <a href="index.html#me" onclick="openHeader()">Me</a>
+                    <a href="index#me" onclick="openHeader()">Me</a>
                     <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
                 </li>
                 <li class="relative group">
-                    <a href="index.html#portfolio" onclick="openHeader()">Portfolio</a>
+                    <a href="index#portfolio" onclick="openHeader()">Portfolio</a>
                     <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
                 </li>
                 <li class="relative group">
@@ -51,7 +61,7 @@
                     <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
                 </li>
                 <li class="relative group">
-                    <a href="index.html#contact" onclick="openHeader()">Contact</a>
+                    <a href="index#contact" onclick="openHeader()">Contact</a>
                     <span class="absolute -bottom-1 left-0 w-0 h-1 bg-amber-300 transition-all group-hover:w-full"></span>
                 </li>
             </ul>
@@ -67,11 +77,11 @@
                 <h1 class="font-bold leading-relaxed">Job van der Ploeg</h1>
                 <p>
                     Hoi, ik ben Job van der Ploeg. Ik ben een student software developer. Ik focus mij momenteel vooral op fullstack web development. Ik vindt het leuk om nieuwe
-                    talen en technieken te leren. Het leukste vindt ik het om mensen te helpen een mooie website te maken. Verder vindt ik het leuk om te hardlopen. En als ik tijd over heb lees ik graag!
+                    talen en technieken te leren. Het leukste vindt ik het om mensen te helpen een mooie website te maken. Verder vindt ik het leuk om te hardlopen. En als ik tijd over heb lees ik graag met een kop slow koffie!
                 </p>
                 <div class="mt-5">
                     <a href="src/img/CV.pdf" target="_blank"> <button class="button">Mijn CV</button> </a>
-                    <a href="index.html#contact"> <button class="button">Contact</button> </a>
+                    <a href="index#contact"> <button class="button">Contact</button> </a>
                 </div>
             </div>
         </div>
@@ -86,7 +96,7 @@
                 <div class="flex" data-aos="fade-up">
                     <p class="font-black text-amber-300 flex mr-10 text-5xl">1</p>
                     <div>
-                        <a href="tracker.html"> <h3 class="font-medium mb-1">Gewicht tracker</h3>
+                        <a href="tracker"> <h3 class="font-medium mb-1">Gewicht tracker</h3>
                             <p class="opacity-90">
                                 Een eigen project om mijn kennis van Laravel bij te schaven. Mijn moeder wilde graag een website waar ze haar <b>gewicht</b> kan bijhouden.
                                 Ik heb dit project gemaakt met <b>laravel</b> en <b>tailwind</b>. Ik heb de library <b>Chart.js</b> gebruikt voor de grafieken.
@@ -94,46 +104,46 @@
                                 Via een grafiek kan de gebruiker zijn gewicht zien. Verder wordt het <b>BMI</b> ook bijgehouden.
                             </p>
                         </a>
-                        <a href="tracker.html"> <button class="button mt-3">Meer</button> </a>
+                        <a href="tracker"> <button class="button mt-3">Meer</button> </a>
                         <a href="http://gewicht.jobvanderploeg.nl" target="_blank"> <button class="button mt-3">Demo</button> </a>
                     </div>
                 </div>
                 <div class="flex" data-aos="fade-up">
                     <p class="font-black text-amber-300 flex mr-10 text-5xl">2</p>
                     <div>
-                        <a href="praktijk.html"> <h3 class="font-medium mb-1">Massagepraktijk</h3>
+                        <a href="praktijk"> <h3 class="font-medium mb-1">Massagepraktijk</h3>
                             <p class="opacity-90">
                                 Een project voor een <b>klant.</b> De klant wilde een website voor haar massagepraktijk. Dit project hebben we met drie personen gemaakt. We hebben samengewerkt met een designer.
                                 De website moest een <b>reserveringssysteem</b> hebben. Dit project hebben we gemaakt met <b>laravel</b> en <b>tailwind</b>. Verder hebben we gebruik gemaakt van de <b>google calendar API</b>
                             </p>
                         </a>
-                        <a href="praktijk.html"> <button class="button mt-3">Meer</button> </a>
+                        <a href="praktijk"> <button class="button mt-3">Meer</button> </a>
                     </div>
                 </div>
                 <div class="flex" data-aos="fade-up">
                     <p class="font-black text-amber-300 flex mr-10 text-5xl">3</p>
                     <div>
-                        <a href="portfolio.html"> <h3 class="font-medium mb-1">Portfolio</h3>
+                        <a href="portfolio"> <h3 class="font-medium mb-1">Portfolio</h3>
                             <p class="opacity-90">
-                                Deze website. Dit project heb ik met html, tailwind en js gemaakt. Verder heb ik <b>AOS js</b> gebruikt voor de scroll animaties. Ik gebruik <b>VITE</b> als build tool.
-                                Ik gebruik verder geen framework omdat ik de website zo <b>licht</b> mogelijk wil laten. De twee eisen van mijzelf zijn een website die <b>informatief</b>
+                                Deze website. Dit project heb ik met html, tailwind en JS gemaakt. Verder heb ik <b>AOS js</b> gebruikt voor de scroll animaties. Ik gebruik <b>VITE</b> als build tool.
+                                Verder gebruik ik geen framework omdat ik de website zo <b>licht</b> mogelijk wil laten. De twee eisen van mijzelf zijn een website die <b>informatief</b>
                                 is en een website met een <b>google lighthouse score</b> van 100%.
                             </p>
                         </a>
-                        <a href="portfolio.html"> <button class="button mt-3">Meer</button> </a>
+                        <a href="portfolio"> <button class="button mt-3">Meer</button> </a>
                     </div>
                 </div>
                 <div class="flex" data-aos="fade-up">
                     <p class="font-black text-amber-300 flex mr-10 text-5xl">4</p>
                     <div>
-                        <a href="coachpraktijk.html"> <h3 class="font-medium mb-1">Coachpraktijk</h3>
+                        <a href="coachpraktijk"> <h3 class="font-medium mb-1">Coachpraktijk</h3>
                             <p class="opacity-90">
                                 Een website voor een klant. De <b>klant</b> heeft een coachpraktijk. Hiervoor wilde ze een website.
-                                Een paar <b>eisen</b> waren dat de website volledig aanpasbaar is door de klant. Om deze reden heb ik gekozen voor <b>wordpress</b>.
+                                Een <b>eis</b> was dat de website volledig aanpasbaar is door de klant. Om deze reden heb ik gekozen voor <b>wordpress</b>.
                                 Verder heb ik geholpen met het <b>opzetten</b> van de website en help ik met het <b>beheren</b> van de website.
                             </p>
                         </a>
-                        <a href="coachpraktijk.html"> <button class="button mt-3">Meer</button> </a>
+                        <a href="coachpraktijk"> <button class="button mt-3">Meer</button> </a>
                     </div>
                 </div>
             </div>
